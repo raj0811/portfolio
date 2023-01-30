@@ -1,0 +1,124 @@
+main {
+    background-image: url('/image/7.jpg');
+    background-size: 100% 100%;
+    height: 100vh;
+    color: aliceblue;
+    display: flex;
+}
+
+
+.main-c {
+    /* border: 2px solid wheat; */
+    width: 100%;
+    justify-content: space-evenly;
+    display: flex;
+    align-items: center;
+}
+
+.hi {
+    /* border: 2px solid white; */
+    width: 40%;
+    height: 40%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    flex-direction: column;
+
+}
+
+.f {
+    display: flex;
+    /* border: 2px solid red; */
+    width: 40%;
+    justify-content: center;
+}
+
+.wave {
+    height: 100%;
+    width: 12%;
+    margin-left: 3%;
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+}
+
+.ico {
+    /* border: 2px solid white; */
+    width: 40%;
+    height: 50%;
+    background-image: url('https://image.freepik.com/free-vector/programmer-coding-young-man-freelancer-working-program-code-with-laptop-geek-coding-software-vector-concept_53562-9214.jpg');
+    background-size: 100% 100%;
+    border: 1px solid;
+    padding: 0px;
+    box-shadow: 0px 10px 42px 0px rgb(42, 22, 230);
+
+
+}
+
+@keyframes shake {
+
+    /* 0% { transform: translate(1px, 1px) rotate(0deg); } */
+    /* 10% { transform: translate(-1px, -2px) rotate(-1deg); } */
+    /* 20% { transform: translate(-3px, 0px) rotate(1deg); } */
+    /* 30% { transform: translate(3px, 2px) rotate(0deg); } */
+    40% {
+        transform: translate(1px, -1px) rotate(1deg);
+    }
+
+    50% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
+
+    /* 60% { transform: translate(-3px, 1px) rotate(0deg); } */
+    /* 70% { transform: translate(3px, 1px) rotate(-1deg); } */
+    /* 80% { transform: translate(-1px, -1px) rotate(1deg); } */
+    /* 90% { transform: translate(1px, 2px) rotate(0deg); } */
+    /* 100% { transform: translate(1px, -2px) rotate(-1deg); } */
+}
+
+
+/* typing effect */
+
+
+/* DEMO-SPECIFIC STYLES */
+.typewriter h1 {
+    color: #fff;
+    font-size: 1.5rem;
+    font-family: monospace;
+    overflow: hidden;
+    /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange;
+    /* The typwriter cursor */
+    white-space: nowrap;
+    /* Keeps the content on a single line */
+    margin: 0 auto;
+    /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em;
+    /* Adjust as needed */
+    animation:
+        typing 3.5s steps(30, end),
+        blink-caret .5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%
+    }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+    from, to {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: orange
+    }
+}

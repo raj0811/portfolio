@@ -1,0 +1,241 @@
+main {
+    background-image: url('/image/6.jpg');
+    height: 100vh;
+    width: 100%;
+    overflow: scroll;
+    color: aliceblue;
+    display: flex;
+    /* border: 2px solid rgb(202, 104, 104); */
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+main::-webkit-scrollbar {
+    display: none;
+}
+
+.main-d{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.project{
+    display: flex;
+    /* border: 2px solid wheat; */
+    flex-direction: column;
+    justify-content: center;
+    padding: 2%;
+    align-items: center;
+}
+.my-projects{
+    display: flex;
+    border: 2px solid wheat;
+    width: 90%;;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+    flex-wrap: wrap;
+}
+.p-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid wheat;
+    height: 65vh;
+    width: 40vh;
+    margin-left: 4%;
+    margin-top: 2%;
+    padding: 1%;
+    transition-duration: 1s;
+    box-shadow: 0px 10px 42px 0px rgb(42, 22, 230);
+
+}
+.p-card:hover{
+    height: 70vh;
+    width: 45vh;
+}
+.p-card div{
+    /* border: 2px solid rgb(202, 8, 8); */
+    height: 50%;
+    width: 100%;
+}
+.p-card span{
+    /* border: 2px solid blue; */
+    height: 40%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2rem;
+    padding: 1%;
+    margin: 0%;
+}
+.p-card a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: blueviolet;
+    color: whitesmoke;
+    text-decoration: none;
+    width: 40%;
+    height: max-content;
+    padding: 1%;
+    font-size: 1.3rem;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px 0px  rgb(255, 255, 255);
+}
+*{
+    padding: 0%;
+    margin: 0%;
+}
+.auth{
+    background-image: url('/image/fp.png');
+    background-size: 100% 100%;
+}
+.auth-h:hover{
+    box-shadow: 0px 10px 42px 0px rgb(22, 230, 116);
+}
+
+.issue{
+    background-image: url('/image/bug.png');
+    background-size: 100% 100%;
+}
+.issue-h:hover{
+    box-shadow: 0px 10px 42px 0px rgb(217, 255, 0);
+}
+
+.api{
+    background-image: url('/image/api.png');
+    background-size: 100% 100%;
+}
+
+
+.api-h:hover{
+    box-shadow: 0px 10px 42px 0px rgb(255, 255, 255);
+}
+
+.encryption{
+    background-image: url('/image/enc.png');
+    background-size: 100% 100%;
+}
+
+
+.enc-h:hover{
+    box-shadow: 0px 10px 42px 0px rgb(2, 238, 147);
+}
+
+.cv{
+    background-image: url('/image/cv.png');
+    background-size: 100% 100%;
+}
+
+
+.cv-h:hover{
+    box-shadow: 0px 10px 42px 0px rgb(243, 62, 86);
+}
+
+
+/* templates */
+
+.web{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    /* border: 2px solid white; */
+    align-items: center;
+    justify-content: center;
+}
+.web-c{
+    display: flex;
+    border: 2px solid rgb(16, 121, 182);
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 95%;
+    padding: 1%;
+}
+.web-card{
+    height: 70vh;
+    width: 50vh;
+    border: 2px solid wheat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 2%;
+    margin-top: 2%;
+}
+.web-card span{
+    /* border: 2px solid pink; */
+    height: 35%;
+  
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2rem;
+    padding: 1%;
+    margin: 0%;
+}
+.web-img{
+    height: 45%;
+    width: 80%;
+    /* border: 2px solid rebeccapurple; */
+}
+.web-c a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: blueviolet;
+    color: whitesmoke;
+    text-decoration: none;
+    width: 40%;
+    height: max-content;
+    padding: 1%;
+    font-size: 1.3rem;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px 0px  rgb(255, 255, 255);
+
+}
+
+.epic{
+    background-image: url('/image/game.png');
+    background-size: 100% 100%;
+}
+
+
+.epic-h:hover{
+    box-shadow: 0px 10px 42px 0px rgb(43, 40, 41);
+}
+
+.cal{
+    background-image: url('/image/cal.png');
+    background-size: 100% 100%;
+}
+
+
+.cal-h:hover{
+    box-shadow: 0px 10px 42px 0px rgb(255, 187, 0);
+}
+
+
+.conct{
+    background-image: url('/image/conct.png');
+    background-size: 100% 100%;
+}
+
+
+.conct-h:hover{
+    box-shadow: 0px 10px 42px 0px rgb(252, 11, 11);
+}
+.music{
+    background-image: url('/image/music.png');
+    background-size: 100% 100%;
+}
+
+
+.music-h:hover{
+    box-shadow: 0px 10px 42px 0px rgb(0, 162, 255);
+}
