@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/contact.css">
+</head>
+<body>
+    
+  
+
+    <div class="main">
+        <div class="cnt">
+            <form action="/sendmail" method="post" class="input-container">
+                <input type="text" name="name" placeholder="Enter your Name">
+                <input type="email" name="email" placeholder="Enter Your Email">
+                <input type="text" name="subject" id="" placeholder="Subject">
+                    <textarea name="msg" id="" cols="30" rows="10" placeholder="Enter Your Message"></textarea>
+                
+                
+                <input id="sent" type="submit" value="Sent">
+            </form>
+        </div>
+        <div class="img">
+
+        </div>
+    </div>
+
+
+
+    <script>
+        var ele=document.getElementById("contact");
+        ele.classList.add("active")
+    </script>
+</body>
+</html>

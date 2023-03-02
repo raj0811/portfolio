@@ -1,0 +1,72 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/mail.css">
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+.mail{
+    background-color: aquamarine;
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    height: 50vh;
+}
+table{
+    margin-left: 5%;
+}
+table tr{
+    margin-top: 20px;
+    padding: 2px;
+}
+td{
+    padding: 5px;
+}
+.first td{
+    display: flex;
+}
+.name{
+    margin-left: 5px;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+.bottom{
+    padding-top: 100px;
+}
+</style>
+<body>
+    <div class="mail">
+
+        <table>
+            <tr class="first">
+                <td><p>Hey</p> <p class="name"><%= name %></p></td>
+            </tr>
+            <tr>
+                <td>This is an autogenrated mail </td>
+                
+            </tr>
+            <tr>
+                <td>you recive this because you  try to contacting me(Raj) Regarding <%= sub %></td>
+            </tr>
+    
+            <tr>
+                <td class="bottom">Thankyou For Contacting me</td>
+            </tr>
+            <tr><td>I will contact you ASAP </td></tr>
+        </table>
+        
+          
+             
+    </div>
+</body>
+</html>
+
+
+
+

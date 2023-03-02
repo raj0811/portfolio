@@ -138,6 +138,19 @@ main::-webkit-scrollbar {
 }
 
 
+
+
+.bill{
+    background-image: url('https://cdn-icons-png.flaticon.com/512/951/951764.png');
+    background-size: 100% 100%;
+}
+
+
+.bill-h:hover{
+    box-shadow: 0px 10px 42px 0px rgb(243, 62, 86);
+}
+
+
 /* templates */
 
 .web{
@@ -238,4 +251,10 @@ main::-webkit-scrollbar {
 
 .music-h:hover{
     box-shadow: 0px 10px 42px 0px rgb(0, 162, 255);
+}
+
+.p-card a:active{
+    background-color: rgb(115, 2, 119);
+    width: 30%;
+    
 }
