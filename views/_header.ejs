@@ -1,28 +1,72 @@
-
-
 <script src="https://kit.fontawesome.com/f324db610c.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="/css/header.css">
-    
+<link rel="stylesheet" href="/css/header.css">
 
 
-    <nav>
-        <div class="log">
-            <div class="logo"></div>
-            <p> <a target="_blank" href="http://localhost:8011/about">Raj B </a>  </p>
-            
-        </div>
-        
-        <ul>
-            
-            <li id="home" ><a  href="/" ><i class="fa-sharp fa-solid fa-house-user"></i>Home</a></li>
-            <li id="about" ><a href="/about"><i class="fa-solid fa-circle-info"></i>About</a></li>
-            <li  id="project"><a href="/projects"><i class="fa-solid fa-laptop-code"></i></i>Project</a></li>
-            <li><a  target="_blank" href="/files/cv.pdf"><i class="fa-solid fa-file-user"></i>Resume</a></li>
-            <li id="contact" ><a  target="_blank" href="/contact"><i class="fa-solid fa-file-user"></i>Contact</a></li>
+
+<nav>
+    <div class="log">
+        <div class="logo"></div>
+        <p> <a target="_blank" href="http://localhost:8011/about">Raj B </a> </p>
+
+    </div>
+
+    <ul>
+
+        <li id="home"><a href="/"><i class="fa-sharp fa-solid fa-house-user"></i>Home</a></li>
+        <li id="about"><a href="/about"><i class="fa-solid fa-circle-info"></i>About</a></li>
+        <li id="project"><a href="/projects"><i class="fa-solid fa-laptop-code"></i></i>Project</a></li>
+        <li><a target="_blank" href="/files/cv.pdf"><i class="fa-solid fa-file-user"></i>Resume</a></li>
+        <li id="contact"><a target="_blank" href="/contact"><i class="fa-solid fa-file-user"></i>Contact</a></li>
+        <li class="gitt"><a target="_blank" href="https://github.com/raj0811"><i class="fa-brands fa-github"></i>
+                <p class="hid">Git</p>
+            </a></li>
+
+
+    </ul>
+
+</nav>
+<div class="mob">
+
+
+
+    <div class="dropdown">
+        <button onclick="myFunction()" class="dropbtn"></button>
+        <div id="myDropdown" class="dropdown-content">
+            <li id="home"><a href="/"><i class="fa-sharp fa-solid fa-house-user"></i>Home</a></li>
+            <li id="about"><a href="/about"><i class="fa-solid fa-circle-info"></i>About</a></li>
+            <li id="project"><a href="/projects"><i class="fa-solid fa-laptop-code"></i></i>Project</a></li>
+            <li><a target="_blank" href="/files/cv.pdf"><i class="fa-solid fa-file-user"></i>Resume</a></li>
+            <li id="contact"><a  href="/contact"><i class="fa-solid fa-file-user"></i>Contact</a></li>
             <li><a target="_blank" href="https://github.com/raj0811"><i class="fa-brands fa-github"></i></a></li>
 
+        </div>
 
-        </ul>
+        
+    </div>
 
-    </nav>
+    <script>
+        /* When the user clicks on the button, 
+        toggle between hiding and showing the dropdown content */
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
 
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function (event) {
+            if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+    </script>
+
+
+<p class="nm"> <a target="_blank" href="http://localhost:8011/about">Raj B </a> </p>
+
+</div>

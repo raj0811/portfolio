@@ -199,6 +199,7 @@ main::-webkit-scrollbar {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    
 
 }
 .social h1{
@@ -275,4 +276,102 @@ main::-webkit-scrollbar {
 }
 .fb:hover{
     box-shadow: 0px 10px 42px 0px rgb(4, 0, 230);
+}
+
+@media only screen and (max-width: 545px){
+
+    .bg-img{
+        display: none;
+    }
+    .data{
+        /* border: 2px solid rgb(38, 163, 13); */
+        padding: 2%;
+        width: 90%;
+        height: 70%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+       
+       
+    }
+
+    .intro{
+        font-size: 1.2rem;
+        margin-top: 3%;
+    }
+    .hobb{
+        font-size: 1rem;
+        margin-top: 2%;
+    }
+    
+    .list{
+        list-style: circle;
+        margin-top: 3%;
+        font-size: 1.1rem;
+    }
+    main {
+        background-image: url('/image/14.jpg');
+        background-image: 100% 100%;
+    }
+
+    .skills{
+        /* border: 2px solid white; */
+        margin-top: 8%;
+        display: flex;
+        flex-direction: column;
+    }
+    .skill-cards{
+        /* border: 2px solid white; */
+        height: 75vh;
+        width: 90%;
+        display: flex;
+        flex-wrap: wrap;
+        /* padding: 2%; */
+        justify-content: center;
+        align-items: center;
+        margin-top: 2%;
+    }
+
+    .card{
+        /* border: 2px solid wheat; */
+        height: 28%;
+        width: 25%;
+        margin-left: 5%;
+        box-shadow: 0px 10px 42px 0px rgb(42, 22, 230);
+        transition-duration: 1s;
+        padding: 1%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .card:hover{
+        rotate: 3deg;
+        height: 30%;
+        width: 26%;
+        margin-left: 5%;
+        box-shadow: 0px 10px 42px 0px rgb(236, 14, 7);
+    }
+
+    .social-card{
+        display: flex;
+        /* border: 2px solid wheat; */
+        height: 30vh;
+        width: 95%;
+        justify-content: space-evenly;
+        align-items: center;
+    
+    }
+    .s-card{
+        /* border: 2px solid white; */
+        height: 78%;
+        width: 40%;
+    }
+
+    .s-card:hover{
+        height: 78%;
+        width: 40%;
+        rotate: 30deg;
+        
+      
+    }
 }
