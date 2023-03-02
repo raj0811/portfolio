@@ -1,17 +1,3 @@
-const devlopment={
-    name: "devlopment",
-    asset_path: 'assets',
-    smtp:{
-        service: 'gmail',
-        host: 'smtp.gmail.com',
-        port: 587,
-        secure: false,
-        auth:{
-            user: 'mrunknown.0086@gmail.com',
-            pass: 'feednriijkgwphcj'
-        }
-    }
-}
 
 // const production={
 //     name:"production",
